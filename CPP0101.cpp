@@ -4,7 +4,7 @@ int main(){
 	std::cin >> t;
 	while(t--){
 		// abcdef
-		// Nguyen Phuong Nam
+		// Xin nguoi
 		long n;
 		std::cin >> n;
 		long long s = n*(n+1)/2;
