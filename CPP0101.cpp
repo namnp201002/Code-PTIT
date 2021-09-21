@@ -5,6 +5,7 @@ int main(){
 	while(t--){
 		// abcdef 12345
 		// Nguyen Phuong Nam
+		// Nguyen Nam 123456789
 		long n;
 		std::cin >> n;
 		long long s = n*(n+1)/2;
