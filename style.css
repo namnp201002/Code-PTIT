@@ -1,0 +1,13 @@
+table, caption{
+    width: 400px;
+}
+th, caption{
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid #da0049;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+}
