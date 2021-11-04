@@ -3,6 +3,8 @@
     "C_Cpp.errorSquiggles": "Enabled",
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iosfwd": "cpp",
+        "iomanip": "cpp"
     }
 }
