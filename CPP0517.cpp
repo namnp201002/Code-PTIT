@@ -21,17 +21,10 @@ void nhap(struct NhanVien &NV){
 }
 void inds(struct NhanVien NV[], int &N){
 	for(int i = 0; i < N; i++){
-		string s="0000";
-		std::ostringstream ss;
-		ss << (i+1);
-		string number = ss.str();
-		if(number.size()==1){
-			s = s + number;
-		}else{
-			s.erase(0, number.size()-1);
-			s = s + number;
-		}
-		cout << s << " ";
+		if(i+1 < 10){
+		    cout << "0000" << to_string(i+1);
+		}else cout << "000" << to_string(i+1);
+		cout <<" ";
 		cout << NV[i].Name << " " << NV[i].GioiTinh << " " << NV[i].NgaySinh << " ";
 		cout << NV[i].Adress << " " << NV[i].MS << " " << NV[i].NgayKy<< endl;
 	}
@@ -44,4 +37,3 @@ int main(){
     inds(ds,N);
     return 0;
 }
-
