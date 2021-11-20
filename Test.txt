@@ -1,8 +1,12 @@
-2
+3
 Nguyen Van Nam
 Nam
 12/12/1997
 Mo Lao-Ha Dong-Ha Noi
+Nguyen Manh Quan
+Nam
+15/12/1997
+Yen Lac Vinh Phuc
 Tran Van Binh
 Nam
 11/14/1995
@@ -16,7 +20,8 @@ Ao khoac nam
 Cai
 240000
 515000
-3
+4
+KH003 MH001 5
 KH001 MH001 2
-KH001 MH002 3
+KH001 MH002 4
 KH002 MH002 4
