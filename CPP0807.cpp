@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 main(){
-    ifstream in("Test.txt");
+    ifstream in("DATA.in");
     int m, n;
     in >> m >> n;
     int a[m], b[n];

@@ -1,9 +1,22 @@
-5 6
-
-1 2 3
- 4 
- 5
-
-3 4 5
- 6 7 
- 8
+2
+Nguyen Van Nam
+Nam
+12/12/1997
+Mo Lao-Ha Dong-Ha Noi
+Tran Van Binh
+Nam
+11/14/1995
+Phung Khoang-Nam Tu Liem-Ha Noi
+2
+Ao phong tre em
+Cai
+25000
+41000
+Ao khoac nam
+Cai
+240000
+515000
+3
+KH001 MH001 2
+KH001 MH002 3
+KH002 MH002 4
