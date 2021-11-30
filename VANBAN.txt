@@ -1,0 +1,11 @@
+Page 1
+Level1: Nhat ky la gi
+Nhat ky la gi thi day la mot ban ghi cung voi cac muc va duoc sap xep ...
+Nhat ky la gi
+Page 2
+Level2: 5 Loi ich tu viec viet nhat ky
+Nhu vay chung ta da biet khai niem nhat ky la gi Vay nhung loi ich ma viec viet nhat ky mang lai
+Level3: Nang cao ky nang ghi chep
+Neu nhu ban muon kha nang ghi chep hay van chuong cua minh tot hon thi cach duy nhat cho viec nay chinh la ban phai viet Bang viec ghi chep nhat ky ban co the ghi chep ngay nay qua ngay khac nhung dieu ma ban biet cung voi nhung dieu ma ban quan tam
+Level3: Luu tru ky niem
+Chac han ban da tung doc lai cac tin nhan da cu xem lai nhung tam hinh cu va co nhung cam xuc cu Neu nhung cam xuc vui ve thi tat nhien la tot con nhung cam xuc buon thi cung khong phai la dieu gi xau no co the khien ban cam thay tu hao boi da vuot qua duoc nhung cam xuc buon do
