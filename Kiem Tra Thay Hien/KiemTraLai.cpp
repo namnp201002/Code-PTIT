@@ -163,7 +163,6 @@ public:
         fstream fout("KiemTraLai.dat", ios::out | ios::binary);
         fout.write(reinterpret_cast<char *>(&tenKH), sizeof(char) * 20);
         fout.write(reinterpret_cast<char *>(&tongTien), sizeof(long long));
-        fout << tongTien << endl;
         for (int i = 0; i < dsHangDat.size(); i++)
         {
             fout.write(reinterpret_cast<char *>(&dsHangDat[i]), sizeof(hangDat));   
@@ -177,10 +176,10 @@ public:
         fin.read(reinterpret_cast<char *>(&tongTien), sizeof(long long));
         while (1)
         {
+            if(!fin) break;
             hangDat hd;
             fin.read(reinterpret_cast<char *>(&hd), sizeof(hangDat));
             dsHangDat.push_back(hd);
-            if(!fin) break;
         }
         fin.close();
     }
