@@ -1,33 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-long long aModM(string s, long long mod){
-	long long number = 0;
-	for (long long i = 0; i < s.length(); i++){
-		number = (number*10 + (s[i] - '0'));
-		number %= mod;
+long long chia_du(string a, long long M){
+	int so_du = 0;
+	for(int i = 0; i < a.length(); i++){
+		so_du = so_du*10 + a[i] - '0';
+		so_du%=M;
 	}
-	return number;
+	return so_du;
 }
-
-long long ApowBmodM(string &a, long long b, long long m){
-	long long ans = aModM(a, m);
-	long long mul = ans;
-	for (long long i=1; i<b; i++)
-		ans = (ans*mul) % m;
-
-	return ans;
+long long result(long long so_du, long long b, long long M){
+	if(b == 1) return so_du;
+	if(b % 2 == 0) return (result(so_du, b/2, M)*result(so_du, b/2, M))%M;
+	else return (((result(so_du, b/2, M)*result(so_du, b/2, M))%M)*so_du)%M;
 }
-int main(){
+main(){
 	int t;
 	cin >> t;
 	while(t--){
-		string a;
-		cin >> a;
-		long long b, m;
-		cin >> b >> m;
-		cout << ApowBmodM(a, b, m);
+		string a; cin >> a;
+		long long b, M;
+		cin >> b >> M;
+		long long so_du = chia_du(a, M);
+		cout << result(so_du, b, M) << endl;
 	}
-	return 0;
 }
-
