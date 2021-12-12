@@ -20,7 +20,6 @@ void tach_ten(ABC &danhba, string &s){
     for(int i = 0; i < vec.size(); i++){
         danhba.ten_dem += vec[i] + ' ';
     }
-
     ss.clear();
     token.clear();
     vec.clear();
@@ -57,10 +56,10 @@ int main(){
         return false;
     });
     ofstream fileout("DIENTHOAI.txt");
-
     for(int i = 0; i < v.size(); i++){
         fileout << v[i].ho << " " << v[i].ten_dem << v[i].ten << " " << v[i].ngaysinh << " " << v[i].sdth << endl;
     }
     filein.close();
+    fileout.close();
     return 0;
 }
