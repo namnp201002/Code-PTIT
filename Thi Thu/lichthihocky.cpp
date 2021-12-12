@@ -58,6 +58,4 @@ int main(){
         }
         cout << LT[i].ngay << " " << LT[i].gio << " " << LT[i].to_thi << endl;
     }
-
-
 }
