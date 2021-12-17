@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-
+// Create by Nguyễn Nam
 struct ABC{
     string ho, ten_dem, ten;
     string sdth;
