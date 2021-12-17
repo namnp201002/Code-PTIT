@@ -3,7 +3,8 @@ using namespace std;
 
 struct LichThi{
     string Ma;
-    string ngay; string gio; string to_thi = "";
+    string ngay; string thang, nam;
+    string gio; string to_thi = "";
     string stt;
 };
 struct MonHoc{
@@ -28,7 +29,9 @@ int main(){
     while(so_ca_thi--){
         getline(cin, s);
         L.Ma = s.substr(0,7);
-        L.ngay = s.substr(8, 10);
+        L.ngay = s.substr(8, 2);
+        L.thang = s.substr(11,2);
+        L.nam = s.substr(14, 4);
         L.gio = s.substr(19, 5);
         L.to_thi = s.substr(25, 2);
         if(x - so_ca_thi < 10){
@@ -39,12 +42,12 @@ int main(){
         LT.push_back(L);
     }
     sort(LT.begin(), LT.end(), [](const LichThi &a, const LichThi &b){
-        if(a.ngay.compare(b.ngay) > 0) return true;
-        if(a.ngay.compare(b.ngay) == 0){
-            if(a.gio.compare(b.gio) < 0) return true;
-        }
-        if( a.ngay.compare(b.ngay) == 0 && a.gio.compare(b.gio)){
-            if(a.Ma.compare(b.Ma) > 0) return true;
+        if(a.nam < b.nam) return true;
+        if(a.nam == b.nam && a.thang < b.thang) return true;
+        if(a.nam == b.nam && a.thang == b.thang && a.ngay < b.ngay) return true;
+        if(a.nam == b.nam && a.thang == b.thang && a.ngay == b.ngay && a.gio < b.gio) return true;
+        if(a.nam == b.nam && a.thang == b.thang && a.ngay == b.ngay && a.gio == b.gio){
+            if(a.Ma < b.Ma) return true;
         }
         return false;
     });
@@ -56,6 +59,7 @@ int main(){
                 break;
             } 
         }
-        cout << LT[i].ngay << " " << LT[i].gio << " " << LT[i].to_thi << endl;
+        cout << LT[i].ngay << "/" << LT[i].thang << "/" << LT[i].nam << " " << LT[i].gio << " " << LT[i].to_thi << endl;
     }
+    return 0;
 }
