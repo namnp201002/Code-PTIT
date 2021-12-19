@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+// Create by Nguyễn Nam
 struct LichThi{
     string Ma;
     string ngay; string thang, nam;
