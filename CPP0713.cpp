@@ -13,17 +13,20 @@ int main()
         int a[n];
         for (int i = 1; i <= n; i++)
         {
-            cin >> a[i];
+            a[i] = i;
         }
-        // while (1)
-        // {
-            
-            // cout << " ";
+        while (1)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                cout << a[i];
+            }
+            cout << " ";
             int i = n - 1;
             while (i > 0 && a[i] > a[i + 1])
                 i--;
-            // if (i == 0)
-            //     break;
+            if (i == 0)
+                break;
             int k = n;
             while (a[k] < a[i])
                 k--;
@@ -35,11 +38,7 @@ int main()
                 l++;
                 r--;
             }
-            for (int i = 1; i <= n; i++)
-            {
-                cout << a[i];
-            }
-        // }
+        }
         cout << endl;
     }
     return 0;
