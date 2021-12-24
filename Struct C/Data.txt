@@ -1,0 +1,19 @@
+6
+Nguyen Phuong Nam
+20/10/2002
+3.6
+Nguyen Manh Cuong
+01/02/2002
+3.5
+Do Duc Hau
+15/10/2002
+3.7
+Nguyen Duc Minh Quang
+17/09/2002
+4.0
+Dao Duy Khanh
+15/12/2002
+2.4
+Do Dang Duy
+01/04/2002
+3.8
