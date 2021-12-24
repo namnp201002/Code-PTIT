@@ -17,10 +17,12 @@ void swap(SinhVien &a, SinhVien &b)
 int main()
 {
     FILE *filein, *fileout;
-    fileout = fopen("Output.txt", "w");
     filein = fopen("Data.txt", "r");
+    fileout = fopen("Output.txt", "w");
+    
     int so_sinh_vien;
     fscanf(filein, "%d", &so_sinh_vien);
+
     SinhVien arr[so_sinh_vien + 5];
     for (int i = 0; i < so_sinh_vien; i++)
     {
@@ -37,13 +39,19 @@ int main()
             itoa(i+1, a, 10);
             strcat(arr[i].MSV, a);
         }
+
         fscanf(filein, "\n");
+
         fgets(arr[i].ten, sizeof(arr[i].ten), filein);
+
         fscanf(filein, "%s", &arr[i].ngaysinh);
+
         fscanf(filein, "%f", &arr[i].GPA);
+        
         arr[i].ten[strlen(arr[i].ten) - 1] = '\0';
         // chỗ này cũng ko hiểu sao trong xâu có enter nên a cho kí tự cuối thành \0 để mất dấu enter
     }
+    // sắp xếp theo GPA nè
     for(int i = 0; i < so_sinh_vien-1; i++){
         for(int j = i + 1; j < so_sinh_vien; j++){
             if(arr[i].GPA < arr[j].GPA){
@@ -51,6 +59,7 @@ int main()
             }
         }
     }
+    // ghi ra file nè mn ơi
     for (int i = 0; i < so_sinh_vien; i++)
     {
         fprintf(fileout, "%s %s %s %.2f\n",arr[i].MSV, arr[i].ten, arr[i].ngaysinh, arr[i].GPA);
